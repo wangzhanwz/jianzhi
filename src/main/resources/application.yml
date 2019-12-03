@@ -1,0 +1,19 @@
+server:
+  port: 8081
+spring:
+  datasource:
+        driverClassName:  com.mysql.jdbc.Driver
+        url: jdbc:mysql://127.0.0.1:3306/jianzhi?useUnicode=true&characterEncoding=utf8&useSSL=false
+        username: root
+        password: 123456
+  jpa:
+    database: mysql
+ #配置mybatis
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.qf.domain
+qiniu:
+  accessKey: RSvE_xj6fxpvY_yTVscuUepIEkgW9woNLeLDuUHF
+  secretKey: gCE_0LR9oTnT2L1vhPhGRJrVK1M-lMtyqPeUAjTU
+  bucket: zhaoajing1-pic
+  url: http://q1fc1h651.bkt.clouddn.com/
